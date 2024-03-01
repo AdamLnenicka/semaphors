@@ -1,4 +1,5 @@
 Description (Post Office)
+
 In the system, we have 3 types of processes: (0) main process, (1) postal clerk, and (2) customer. Each customer goes to the post office to handle one of three types of requests: postal services, packages, and money services. Each request is uniquely identified by a number (letters: 1, packages: 2, money services: 3). Upon arrival, a customer joins the queue according to the activity they intend to handle. Each clerk serves all queues (randomly selecting one queue each time). If no customer is currently waiting, the clerk takes a short break. After closing the post office, the clerks finish serving all customers in the queue, and once all queues are empty, they go home. Any customers who arrive after the post office is closed also go home (tomorrow is another day).
 
 Detailed Task Description
