@@ -141,7 +141,9 @@ $ ./proj2 NZ NU TZ TU F
 • Your solution must be compilable and runnable on the merlin server.
 
 <h2>Example Output</h2>
+
 Example output file proj2.out for the following command:
+
 ```
 $ ./proj2 3 2 100 100 100
 1: U 1: started
