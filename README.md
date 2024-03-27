@@ -25,17 +25,6 @@ $ ./proj2 NZ NU TZ TU F
 
 • If any semaphore or shared memory operation fails, the program follows the same process—printing an error message to the standard error output, releasing all allocated resources, and exiting with exit code 1.
 
-<h2>Implementation Details:</h2>
-
-• Each process performs its actions and simultaneously writes information about the actions to a file named proj2.out. The output information includes the sequential number A of the action being performed (see output description). Actions are numbered starting from one.
-
-• Use shared memory to implement the action counter and shared variables necessary for synchronization.
-
-• Use semaphores for process synchronization.
-
-• Do not use active waiting (including cyclically sleeping the process) for synchronization purposes.
-
-• Work with processes, not threads.
 
 <h2>Main Process</h2>
 
@@ -111,7 +100,7 @@ $ ./proj2 NZ NU TZ TU F
     ◦ Process terminates
   
 
-<h2>General Information</h2>
+<h2>Given requirements</h2>
 
 • Implement the project in the C language. Comment the source code and program neatly. The quality of the source code will also be evaluated.
 
@@ -123,6 +112,15 @@ $ ./proj2 NZ NU TZ TU F
 
 • Note for testing: You can simulate more frequent process switching, for example, by inserting short sleeps after releasing semaphores, etc. For testing purposes only; do not include in the final solution.
 
+• Each process performs its actions and simultaneously writes information about the actions to a file named proj2.out. The output information includes the sequential number A of the action being performed (see output description). Actions are numbered starting from one.
+
+• Use shared memory to implement the action counter and shared variables necessary for synchronization.
+
+• Use semaphores for process synchronization.
+
+• Do not use active waiting (including cyclically sleeping the process) for synchronization purposes.
+
+• Work with processes, not threads.
 
 <h2>Compilation</h2>
 
