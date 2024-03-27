@@ -25,8 +25,6 @@ if [ ! -z $1 ]; then
             - spusti test s danym poctem opakovani, vychozi hodnota je 50
             - pokud je zadan prepinac -m, omezi max pocet procesu na 82, aby to fungovalo na merlinovi
 
-    Disclaimer:
-        Nemuzu zarucit uplnou spolehlivost, kdyztak dm @Nukusumus na Discordu\n"
         exit 0
     fi
 
