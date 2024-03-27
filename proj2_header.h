@@ -22,11 +22,11 @@
 #include <signal.h>     // signal handling functions
 #include <ctype.h>      // input check types
 
-#define SEMAPHORE_MUTEX "/xsulta01_sem_mutex"
-#define SEMAPHORE_SERVICEFRST "/xsulta01_servicefrst" 
-#define SEMAPHORE_SERVICESCND "/xsulta01_servicescnd" 
-#define SEMAPHORE_SERVICETHRD "/xsulta01_servicethrd" 
-#define SEMAPHORE_CLERK "/xsulta01_clerk"
+#define SEMAPHORE_MUTEX "/xlneni00_sem_mutex"
+#define SEMAPHORE_SERVICEFRST "/xlneni00_servicefrst" 
+#define SEMAPHORE_SERVICESCND "/xlneni00_servicescnd" 
+#define SEMAPHORE_SERVICETHRD "/xlneni00_servicethrd" 
+#define SEMAPHORE_CLERK "/xlneni00_clerk"
 
 #define NUM_SERVICES 3  // Number of Post services: dopisy:1, balíky:2, peněžní služby:3.
 #define upsleep_for_random_time(time_max) usleep((rand() % (time_max + 1)) * 1000) // Macros for wait random time in range from 0 to time_max(inclusive).
