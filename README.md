@@ -24,6 +24,8 @@ In the system, we have 3 types of processes: (0) main process, (1) postal clerk,
 
 • Work with processes, not threads.
 
+• Your solution must be compilable and runnable on the merlin server.
+
 
 <h2>Detailed Task Description</h2>
 Execution:
@@ -134,9 +136,8 @@ $ ./proj2 NZ NU TZ TU F
 
 • Compile source codes with the options -std=gnu99 -Wall -Wextra -Werror -pedantic
 
-• If your solution requires it, you can add additional options for the linker (e.g., for semaphores or shared memory, -pthread, -lrt, etc.).
+• You can add additional options for the linker (e.g., for semaphores or shared memory, -pthread, -lrt, etc.).
 
-• Your solution must be compilable and runnable on the merlin server.
 
 <h2>Example Output</h2>
 
