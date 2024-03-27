@@ -2,6 +2,29 @@
 
 In the system, we have 3 types of processes: (0) main process, (1) postal clerk, and (2) customer. Each customer goes to the post office to handle one of three types of requests: postal services, packages, and money services. Each request is uniquely identified by a number (letters: 1, packages: 2, money services: 3). Upon arrival, a customer joins the queue according to the activity they intend to handle. Each clerk serves all queues (randomly selecting one queue each time). If no customer is currently waiting, the clerk takes a short break. After closing the post office, the clerks finish serving all customers in the queue, and once all queues are empty, they go home. Any customers who arrive after the post office is closed also go home (tomorrow is another day).
 
+<h2>Requirements</h2>
+
+• Implement the project in the C language. Comment the source code and program neatly. The quality of the source code will also be evaluated.
+
+• Ensure that all processes terminate correctly and that all allocated resources are properly released upon termination.
+
+• Adhere to the syntax of specified names, file format, and output data format. Use a basic script to verify the correctness of the output format (available from the assignment website).
+
+• Queries regarding the assignment: Address all ambiguities and questions only through the project 2 discussion forum.
+
+• Note for testing: You can simulate more frequent process switching, for example, by inserting short sleeps after releasing semaphores, etc. For testing purposes only; do not include in the final solution.
+
+• Each process performs its actions and simultaneously writes information about the actions to a file named proj2.out. The output information includes the sequential number A of the action being performed (see output description). Actions are numbered starting from one.
+
+• Use shared memory to implement the action counter and shared variables necessary for synchronization.
+
+• Use semaphores for process synchronization.
+
+• Do not use active waiting (including cyclically sleeping the process) for synchronization purposes.
+
+• Work with processes, not threads.
+
+
 <h2>Detailed Task Description</h2>
 Execution:
 
@@ -98,29 +121,6 @@ $ ./proj2 NZ NU TZ TU F
     ◦ Prints: A: U idU: going home
   
     ◦ Process terminates
-  
-
-<h2>Given requirements</h2>
-
-• Implement the project in the C language. Comment the source code and program neatly. The quality of the source code will also be evaluated.
-
-• Ensure that all processes terminate correctly and that all allocated resources are properly released upon termination.
-
-• Adhere to the syntax of specified names, file format, and output data format. Use a basic script to verify the correctness of the output format (available from the assignment website).
-
-• Queries regarding the assignment: Address all ambiguities and questions only through the project 2 discussion forum.
-
-• Note for testing: You can simulate more frequent process switching, for example, by inserting short sleeps after releasing semaphores, etc. For testing purposes only; do not include in the final solution.
-
-• Each process performs its actions and simultaneously writes information about the actions to a file named proj2.out. The output information includes the sequential number A of the action being performed (see output description). Actions are numbered starting from one.
-
-• Use shared memory to implement the action counter and shared variables necessary for synchronization.
-
-• Use semaphores for process synchronization.
-
-• Do not use active waiting (including cyclically sleeping the process) for synchronization purposes.
-
-• Work with processes, not threads.
 
 <h2>Compilation</h2>
 
